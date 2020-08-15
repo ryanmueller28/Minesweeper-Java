@@ -1,6 +1,13 @@
 package com.company;
 
 public class Cell {
+    /**
+     * Class properties:
+     * @param isMine - is this cell a mine?
+     * @param HiddenValue - what is the cell actually?
+     * @param DisplayValue - what is the cell to the player?
+     */
+
     // is this cell a mine?
     boolean isMine;
 
@@ -22,12 +29,14 @@ public class Cell {
         this.HiddenValue = '.';
     }
 
+    /**
+     * Getter function for isMine
+     * Getter is to call in classes above this one
+     * Without messing with the variable itself
+     * @return true if it's a mine
+     */
     public boolean isMine() {
         return isMine;
-    }
-
-    public void setMine(boolean mine) {
-        isMine = mine;
     }
 
     public void setMine(){
